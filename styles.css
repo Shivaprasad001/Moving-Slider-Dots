@@ -1,0 +1,87 @@
+.slider {
+    width: 90%;
+  }
+  .item {
+    width: 99%;
+    height: 300px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bg-red {background: red;}
+  .bg-yellow {background: yellow;}
+  .bg-blue {background: blue;}
+  .bg-green {background: green}
+  .bg-orange {background: orange;}
+  .bg-brown {background: brown;}
+  
+  .slick-next {
+    right: 11px;
+  }
+  .slick-prev {
+    left: 0;
+    z-index: 1;
+  }
+  
+  /* Slider Dots Styles */
+  
+  .slider-nav {
+      display: flex;
+      width: 90px;
+      overflow: hidden;  
+      margin: 20px auto;
+      height: 50px;
+      align-items: center;
+      padding:  0 3px;
+    position: relative;
+  }
+  .slider-nav ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      transition: all ease 0.4s;
+    bottom: auto;
+  }
+  
+  .slider-nav ul li button {
+      transform: scale(0.5)
+  }
+  
+  .slider-nav ul li button::before {
+    display: none;
+  }
+  
+  .slider-nav ul li.dot--medium button {
+      transform: scale(0.8)
+  }
+  
+  .slider-nav ul li button {
+      font-size: 0;
+      width: 10px;
+      height: 10px;
+      border: none;
+      border-radius: 50%;
+      background: #d3d3d3;
+      padding: 0;
+      cursor: pointer;
+  }
+  
+  .slider-nav ul li {
+      margin: 0;
+      margin-right: 10px;
+      line-height: 0;
+  }
+  
+  .slider-nav ul li:last-child {
+      margin-right: 0;
+  }
+  
+  .slider-nav ul li.slick-active button{
+      background-color: #580f8b;
+      transform: scale(1.2);
+  }
+  
+  
